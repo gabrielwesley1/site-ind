@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site projeto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/santos.jpeg">
+    <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--NAV-->
+    <div class="navbar">
+        <div class="container">
+            <div class="frase">
+                <span>O Maior</span> Brasileiro do Mundo
+            </div>
+            <ul>
+
+                <li><a href="index.html" class="current">home</a></li>
+                <li><a href="sobre.html" class="current">sobre</a></li>
+                <li><a href="contato.html" class="current">contato</a></li>
+                <li><a class="current">Seja sóciorei</a>
+                    <button id="Login">Login</button>
+            </ul>
+        </div>
+        <div class="imagemlogo">
+            <a href="index.html"> <img src="./img/logo.jpg" alt="" style="cursor: pointer;"></a>
+        </div>
+    </div>
+    <!--END NAV-->
+
+
+    <!--BANNER-->
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <!-- <div class="numbertext">1 / 5</div> -->
+            <img src="img/santosbanner.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade" style="margin-left: 15%;">
+            <!-- <div class="numbertext">2 / 5</div> -->
+            <img src="img/pele.jpg" style="width:90%">
+
+        </div>
+
+        <div class="mySlides fade" style="margin-left: 10%;">
+            <!-- <div class="numbertext">3 / 5</div> -->
+            <img src="img/neymar.webp" style="width:90%">
+
+        </div>
+
+        <div class="mySlides fade" style="margin-left: 13%;">
+            <!-- <div class="numbertext">4 / 5</div> -->
+            <img src="img/rodrygo.jpg" style="width:82%">
+
+        </div>
+        <div class="mySlides fade" style="margin-left: 15%;">
+            <!-- <div class="numbertext">4 / 5</div> -->
+            <img src="img/marinho2.jpeg" style="width:80%">
+
+        </div>
+
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!--fim do banner-->
+
+    <div class="novidades">
+        <div class="container">
+            <h2>Receba atualizações do time</h2>
+            <form>
+                <input type="email" placeholder="Digite aqui seu e-mail">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <br><br>
+
+    <!-- FIM DO FORM -->
+    <div class="jogadores">
+        <div class="container">
+            <h2 style="text-align: center;">Conheça nosso time</h2>
+
+
+
+        </div>
+    </div>
+    <div class="escalacao">
+        <img class="campinho" src="img/campinho.svg" alt="" style=" width: 30%; text-align: center;">
+        <div class="imagens1">
+            <img src="./img/marinho.jpg" alt="">
+            <img src="./img/neymar.webp" alt="">
+            <img src="./img/rodrygo.jpg" alt="">
+
+        </div>
+        <div class="imagens2">
+            <img src="./img/pele.jpg" alt="">
+            <img src="./img/marinho2.jpeg" alt="">
+            <img src="./img/marinho1.jpg" alt="">
+
+        </div>
+        <div class="imagens3">
+            <img src="./img/marinho.jpg" alt="">
+            <img src="./img/marinho.jpg" alt="">
+            <img src="./img/marinho.jpg" alt="">
+            <img src="./img/marinho.jpg" alt="">
+
+        </div>
+        <div class="imagens4">
+            <img src="./img/marinho.jpg" alt="">
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        /* background do modal */
+        
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+        /* CONTEÚDO DO MODAL */
+        
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        /* FECHAMENTO DO BOTÃO */
+        
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+
+
+
+
+
+    <!-- PREPARANDO PARA ABRIR O MODAL -->
+
+    <!-- O MODAL -->
+    <div id="myModal" class="modal">
+
+        <!-- DENTRO DO MODAL -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>TELA DE LOGIN PARA SÓCIOREI E CADASTRO</p>
+        </div>
+
+    </div>
+
+    <script>
+        // irá pegar o modal pelo id
+        var modal = document.getElementById("myModal");
+
+        // irá pegar o button pelo id e executar a função 
+        var btn = document.getElementById("Login");
+
+        // pegando o span para fechar o modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // assim que clicar, irá abrir o modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // quando clicar no (x), irá fechar o modal pelo span
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // quando clicar em qualquer lugar da tela irá fecghar o modal
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides ");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none ";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block ";
+        setTimeout(showSlides, 3000); // 1000 = 1s / TEMPO PARA TROCAR DE IMAGEM
+    }
+</script>
