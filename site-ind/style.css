@@ -361,12 +361,29 @@ a:hover {
     z-index: 2;
 } */
 
+.jogadores {
+    margin-right: 45%;
+    font-family: fantasy;
+}
+
+.nome {
+    margin-left: 55%;
+    font-family: fantasy;
+    margin-top: -40%;
+}
+.nome h5 {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
 .escalacao {
     margin-left: 15%;
+    margin-bottom: 100%;
 }
 
 .campinho {
     z-index: -1;
+    margin-top: 0%;
 }
 
 .imagens1 img {
