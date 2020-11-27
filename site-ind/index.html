@@ -23,14 +23,15 @@
                 <li><a href="index.html" class="current">home</a></li>
                 <li><a href="sobre.html" class="current">sobre</a></li>
                 <li><a href="contato.html" class="current">contato</a></li>
-                <li><a class="current">Seja sóciorei</a>
-                    <button id="Login">Login</button>
+                <li><a style="cursor: pointer;" class="current">Seja sóciorei</a>
+                    <button class="btnlogin" id="Login">LOGIN</button>
             </ul>
         </div>
         <div class="imagemlogo">
             <a href="index.html"> <img src="./img/logo.jpg" alt="" style="cursor: pointer;"></a>
         </div>
     </div>
+
     <!--END NAV-->
 
 
@@ -132,202 +133,26 @@
         </div>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <style>
-        /* background do modal */
-        
-        .modal {
-            display: none;
-            /* Hidden by default */
-            position: fixed;
-            /* Stay in place */
-            z-index: 1;
-            /* Sit on top */
-            padding-top: 100px;
-            /* Location of the box */
-            left: 0;
-            top: 0;
-            width: 100%;
-            /* Full width */
-            height: 100%;
-            /* Full height */
-            overflow: auto;
-            /* Enable scroll if needed */
-            background-color: rgb(0, 0, 0);
-            /* Fallback color */
-            background-color: rgba(0, 0, 0, 0.4);
-            /* Black w/ opacity */
-        }
-        /* CONTEÚDO DO MODAL */
-        
-        .modal-content {
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-        }
-        /* FECHAMENTO DO BOTÃO */
-        
-        .close {
-            color: #aaaaaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
-
-
-
-
-
     <!-- PREPARANDO PARA ABRIR O MODAL -->
 
     <!-- O MODAL -->
     <div id="myModal" class="modal">
 
         <!-- DENTRO DO MODAL -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>TELA DE LOGIN PARA SÓCIOREI E CADASTRO</p>
-        </div>
+        <center>
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>TELA DE LOGIN PARA SÓCIOREI E CADASTRO</p> <br>
+
+                <input class="ipn_login" type="text" placeholder="E-mail ou usuário" id="ipn_email"><br><br>
+                <input class="ipn_login" type="text" placeholder="Senha" id="ipn_senha"><br><br>
+                <span>Lembrar senha?</span><input type="checkbox" name="" id="lembrar_senha">
+                <span id="esqueceu_senha">Esqueceu sua senha ?</span> <br> <br>
+                <button class="efeito_btn" id="btn_entrar_login" onclick="entrar()">Entrar</button>
+                <button class="efeito_btn" id="btn_criar_login" onclick="criar()">Crie sua conta</button>
+
+            </div>
+        </center>
 
     </div>
 
@@ -358,31 +183,6 @@
             }
         }
     </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 
 </html>
