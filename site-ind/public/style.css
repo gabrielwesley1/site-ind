@@ -1,0 +1,733 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    /* color: white; */
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: white;
+    /* color: red; */
+    height: 100px;
+    border-bottom: 4px black solid;
+    margin-right: 0%;
+}
+
+.container {
+    height: 100px;
+    width: 80%;
+    margin: auto;
+}
+
+.navbar .container .frase {
+    float: left;
+    margin-top: 41px;
+    margin-right: 6%;
+    font-family: fantasy;
+    color: black;
+}
+
+.navbar ul {
+    float: right;
+    text-transform: uppercase;
+    margin-right: 18%;
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    margin-left: 18px;
+    margin-top: 20px;
+}
+
+.navbar h1 span {
+    color: orangered
+}
+
+.imagemlogo img {
+    height: 15%;
+    width: 4%;
+    margin-top: -8%;
+    margin-left: 4%;
+    padding-bottom: 2%;
+}
+
+.current {
+    color: #292929
+}
+
+.btnlogin {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    float: left;
+    margin-left: 93%;
+    margin-top: -3%;
+}
+
+.btncadastro {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    float: left;
+    margin-left: 83%;
+    margin-top: -37px;
+}
+
+.banner {
+    height: 400px;
+    background: #adadad url(../imgs/banner-fundo-big.jpeg) no-repeat scroll;
+    /*
+    background-image: url(../imgs/banner-fundo-small.jpeg);
+    background-color: #adadad;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    */
+    background-size: cover;
+    text-align: center;
+    /*novo*/
+}
+
+.banner h1 {
+    padding-top: 150px;
+    /*corrigido*/
+    margin: 0;
+    font-size: 48px;
+    /* color: orangered; */
+}
+
+.banner p {
+    font-weight: bold;
+    color: gray;
+    font-size: 18px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+
+/* INICIO DO STYLE MODAL */
+
+
+/* background do modal */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* CONTEÚDO DO MODAL */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+
+/* FECHAMENTO DO BOTÃO */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*  FIM DO MODAL */
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.novidades {
+    background-color: #232323;
+    padding: 45px 0;
+    height: 35px;
+    width: 100%;
+}
+
+.novidades h2 {
+    color: #ffffff;
+    /*white*/
+    margin: 0;
+    float: left;
+    font-weight: 400;
+}
+
+.novidades form {
+    float: right;
+}
+
+.novidades input {
+    height: 30px;
+    width: 200px;
+    padding-top: 0%;
+    border-radius: revert;
+}
+
+.novidades button {
+    background-color: whitesmoke;
+    border: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.novidades .container h2 {
+    font-family: fantasy;
+}
+
+
+/*FIM DAS NOVIDADES*/
+
+.box {
+    overflow: auto;
+}
+
+.box img {
+    width: 100px;
+}
+
+.box .box-item {
+    width: 33%;
+    float: left;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/* FIM DAS IMAGENS */
+
+.footer {
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.footer h4 {
+    font-weight: 100;
+}
+
+
+/* .campinho {
+    z-index: 2;
+} */
+
+.jogadores {
+    margin-right: 45%;
+    font-family: fantasy;
+}
+
+.nome {
+    margin-left: 55%;
+    font-family: fantasy;
+    margin-top: -40%;
+}
+
+.nome h5 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.escalacao {
+    margin-left: 15%;
+    margin-bottom: 100%;
+}
+
+.campinho {
+    z-index: -1;
+    margin-top: 0%;
+}
+
+.imagens1 img {
+    width: 7%;
+    margin-left: 2.1%;
+    border-radius: 40%;
+    opacity: 50%;
+}
+
+.imagens1 {
+    margin-top: -38%;
+}
+
+.imagens2 img {
+    width: 7%;
+    margin-left: 2.1%;
+    border-radius: 40%;
+    opacity: 50%;
+}
+
+.imagens2 {
+    margin-top: 6%;
+}
+
+.imagens3 img {
+    width: 4.6%;
+    margin-left: 2.1%;
+    border-radius: 40%;
+    opacity: 50%;
+}
+
+.imagens3 {
+    margin-top: 5%;
+}
+
+.imagens4 img {
+    width: 6%;
+    margin-left: 12.1%;
+    border-radius: 40%;
+    opacity: 50%;
+}
+
+.imagens4 {
+    margin-top: 3.8%;
+}
+
+.imagens1 img:hover {
+    width: 9%;
+    opacity: 100%;
+    margin-left: 1%;
+}
+
+.imagens2 img:hover {
+    width: 9%;
+    opacity: 100%;
+    margin-left: 1%;
+}
+
+.imagens3 img:hover {
+    width: 6%;
+    opacity: 100%;
+    margin-left: 1%;
+}
+
+.imagens4 img:hover {
+    width: 6%;
+    opacity: 100%;
+    margin-left: 12%;
+}
+
+
+/* TELA CONTATO */
+
+.showcase_contato {
+    background-image: url(../img/gif_time.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 111.2%;
+    height: 500px;
+    margin-left: -11.2%;
+    /* background-color: black; */
+}
+
+.tela_preta3 {
+    background-color: rgba(0, 0, 0, 0.809);
+    width: 112.5%;
+    height: 600px;
+    padding-top: 75px;
+    text-align: center;
+}
+
+.tela_preta3 h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.tela_preta3 input {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    border: white 5px solid;
+    color: white;
+    height: 35px;
+    width: 600px;
+    font-size: 18px;
+}
+
+.tela_preta3 ::placeholder {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.tela_preta3 #inp_mensagem {
+    height: 120px;
+}
+
+.tela_preta3 #btn_enviar_contato {
+    border: 0;
+    width: 200px;
+    height: 35px;
+    color: black;
+    border-radius: 10px;
+    border: gray 3px solid;
+}
+
+#btn_enviar_contato:hover {
+    background-color: black;
+    color: white;
+    border: white(108, 108, 255) 3px solid;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: black;
+    border-top: red;
+    text-align: center;
+    height: 100%;
+    width: 100% !important;
+    /* margin-top: 5%; */
+}
+
+.footer h4 {
+    color: white;
+    font-weight: 100;
+    margin: 0;
+    padding-top: 40px;
+}
+
+
+/* PAGINA SOBRE */
+
+.entry-content p {
+    margin-bottom: 15px;
+    margin-left: 20%;
+}
+
+.tela_preta {
+    background-color: rgba(0, 0, 0, 0.802);
+    width: 124.9%;
+    height: 590px;
+    padding-top: 70px;
+    margin-left: -12.5%;
+}
+
+.tela_preta h1 {
+    color: white;
+    margin-left: 100px;
+    font-size: 58px;
+}
+
+.tela_preta p {
+    margin-left: 300px;
+    color: white;
+    font-size: 34px;
+}
+
+.showcase_sobre {
+    background-image: url(../img/mapa\ vazamentos.jpg);
+    width: 100%;
+    height: 630px;
+}
+
+.thumb {
+    margin-left: 20%;
+    margin-top: 1%;
+}
+
+.thumb h1 {
+    margin-left: 25%;
+}
+
+.estadio {
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+
+.estadio h1 {
+    margin-left: 25%;
+}
+
+
+/* VALORES */
+
+.valores {
+    margin-top: 40px;
+    text-align: center;
+    width: 900px;
+    height: 430px;
+    margin-left: 4%;
+}
+
+.valores ul {
+    list-style: none;
+    display: flex;
+}
+
+.valores ul li {
+    margin-left: 140px;
+}
+
+.valores img {
+    width: 140px;
+}
+
+.valores .container {
+    margin-left: 100px;
+}
+
+.valores h3 {
+    font-size: 24px;
+}
+
+.valores p {
+    font-size: 18px;
+}
+
+
+/* TELA DE LOGIN */
+
+.showcase_login {
+    width: 100%;
+    height: 527px;
+}
+
+.showcase_login .container {
+    width: 1100px;
+    height: 500px;
+    margin-top: 7%;
+    margin-left: 15%;
+    display: flex;
+    border-radius: 10px;
+}
+
+.showcase_login .container #lado_esquerdo_login {
+    width: 100%;
+    height: 90%;
+    background-color: #c0c0c0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#lado_esquerdo_login img {
+    width: 120px;
+    height: 0%;
+}
+
+#lado_esquerdo_login .inp_loging {
+    width: 300px;
+    height: 25px;
+    border: #5c5858 0.2px solid;
+    text-align: center;
+}
+
+#lado_esquerdo_login ::placeholder {
+    text-align: center;
+}
+
+#lado_esquerdo_login span {
+    font-size: 12px;
+}
+
+#lado_esquerdo_login #lembrar_senha {
+    margin-right: 80px;
+}
+
+#lado_esquerdo_login #btn_entrar_login {
+    border: none;
+    width: 100px;
+    height: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    float: left;
+    margin-left: 125px;
+}
+
+#lado_esquerdo_login #btn_criar_login {
+    border: none;
+    width: 120px;
+    height: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    margin-left: 0%;
+}
+
+#lado_esquerdo_login #btn_criar_login:hover {
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#lado_esquerdo_login #btn_entrar_login:hover {
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.showcase_login .container #lado_direito_login {
+    width: 70%;
+    height: 90%;
+    background-image: url(./img/vila.jpg);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#lado_direito_login #tom_escuro {
+    width: 550px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.414);
+    float: right;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
