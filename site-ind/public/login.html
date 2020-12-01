@@ -15,21 +15,28 @@
         <div class="container">
             <div id="lado_esquerdo_login">
 
-                <a href="index.html"> <img src="img/santos.jpeg" style="height: 200px; width: 200px;" alt=""></a>
+                <a href="index.html"> <img src="img/santos.jpeg" style="height: 200px; width: 230px;" alt=""></a>
 
                 <h3>Bem vindo de volta SócioRei! <br> Entre com sua conta:</h3>
 
                 <form id="form_login" method="post" onsubmit="return entrar()">
                     Usuário:
-                    <input type="text" class="input-padrao" name="login">
+                    <input type="text" id="inp_nome" class="input-padrao" name="login">
                     <br> Senha:
-                    <input type="password" class="input-padrao" name="senha">
+                    <input type="password" id="inp_email" class="input-padrao" name="senha">
                     <br> <br>
-                    <button id="btn_entrar" class="btn">Entrar</button><br><br>
+                    <button id="btn_entrar" onclick="enviar()" class="btn">Entrar</button><br><br>
                 </form>
-                <button class="efeito_btn" id="btn_criar_login" onclick="criar()">Crie sua conta</button>
+                <button class="efeito_btn" id="btn_criar_login" onclick="cadastrar()">Crie sua conta</button>
+                <div class="extra">
+                    <div id="div_erro" class="msg_erro">
+                    </div>
 
+                    <img style="display: none;" src="img/gif2.gif" id="img_aguarde">
+
+                </div>
             </div>
+
 
 
 
@@ -78,6 +85,19 @@
         return false;
     }
 
+    function enviar() {
+        var nome = inp_nome.value
+        var email = inp_email.value
+
+
+        if (nome == "" || email == "") {
+            alert('Campos inválidos, insira um valor valido!');
+            inp_nome.value = "";
+            inp_email.value = "";
+
+        }
+    }
+
     function aguardar() {
         btn_entrar.disabled = true;
         img_aguarde.style.visibility = 'visible';
@@ -89,5 +109,19 @@
         img_aguarde.style.visibility = 'hidden';
         div_erro.style.visibility = 'visible';
         div_erro.innerHTML = resposta;
+    }
+</script>
+<script>
+    // FUNÇÃO PARA QUANDO APERTAR O BOTTAO CADASTRAR, IR PRA A PAGINA CADASTRAR
+    function cadastrar() { //FUNÇÃO CADASTRAR
+        window.open("cadastro.html"); //WINDOW = PAGINA // OPEN = ABRIR, FUNÇÃO ONDE ABRE A PAGINA "CADASTRAR.HTML"
+    }
+
+    function login() { //FUNÇÃO LOGIN
+        window.open("login.html"); //COMANDO PARA ABRIR A PAGINA "LOGIN.HTML"
+    }
+
+    function contato() { //FUNÇÃO CONTATO
+        window.open("contato.html"); //COMANDO PARA ABRIR A PAGINA "CONTATO.HTML"
     }
 </script>

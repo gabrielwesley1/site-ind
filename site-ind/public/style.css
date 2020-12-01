@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    padding: 0;
 }
 
 a {
@@ -354,8 +355,8 @@ a:hover {
 /* FIM DAS IMAGENS */
 
 .footer {
-    background-color: orangered;
-    color: white;
+    /* background-color: orangered; */
+    /* color: white; */
     text-align: center;
     padding-top: 10px;
 }
@@ -386,7 +387,7 @@ a:hover {
 
 .escalacao {
     margin-left: 15%;
-    margin-bottom: 100%;
+    margin-bottom: 25%;
 }
 
 .campinho {
@@ -629,6 +630,11 @@ a:hover {
     font-size: 18px;
 }
 
+.gif {
+    margin-left: 50%;
+    margin-top: 50%;
+}
+
 
 /* TELA DE LOGIN */
 
@@ -641,13 +647,13 @@ a:hover {
     width: 1100px;
     height: 500px;
     margin-top: 7%;
-    margin-left: 15%;
+    margin-left: 30%;
     display: flex;
     border-radius: 10px;
 }
 
 .showcase_login .container #lado_esquerdo_login {
-    width: 100%;
+    width: 40%;
     height: 90%;
     background-color: #c0c0c0;
     border-top-left-radius: 10px;
@@ -713,21 +719,4 @@ a:hover {
     color: white;
     font-weight: bold;
     cursor: pointer;
-}
-
-.showcase_login .container #lado_direito_login {
-    width: 70%;
-    height: 90%;
-    background-image: url(./img/vila.jpg);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-#lado_direito_login #tom_escuro {
-    width: 550px;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.414);
-    float: right;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
 }

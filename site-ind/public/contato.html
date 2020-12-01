@@ -23,8 +23,7 @@
                 <li><a href="index.html" class="current">home</a></li>
                 <li><a href="sobre.html" class="current">sobre</a></li>
                 <li><a href="contato.html" class="current">contato</a></li>
-                <li><a style="cursor: pointer;" class="current">Seja sóciorei</a>
-                    <button class="btnlogin" id="Login">LOGIN</button>
+
             </ul>
         </div>
         <div class="imagemlogo">
@@ -35,7 +34,7 @@
     <div class="showcase_contato">
         <div class="container">
             <div class="tela_preta3">
-                <h1>Fale conosco</h1>
+                <h1>Fale com a diretoria do time</h1>
                 <input class="inp_estilo" id="inp_nome" placeholder="Seu nome"> <br> <br>
                 <input class="inp_estilo" id="inp_email" placeholder="Endereço de e-mail"> <br> <br>
                 <input class="inp_estilo" id="inp_mensagem" placeholder="Sua mensagem"> <br> <br>
@@ -80,57 +79,5 @@
 
         function login() { //FUNÇÃO LOGIN
             window.open("login.html"); //COMANDO PARA ABRIR A PAGINA "LOGIN.HTML"
-        }
-    </script>
-    <!-- PREPARANDO PARA ABRIR O MODAL -->
-
-    <!-- O MODAL -->
-    <div id="myModal" class="modal">
-
-        <!-- DENTRO DO MODAL -->
-        <center>
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>TELA DE LOGIN PARA SÓCIOREI E CADASTRO</p> <br>
-
-                <input class="ipn_login" type="text" placeholder="E-mail ou usuário" id="ipn_email"><br><br>
-                <input class="ipn_login" type="text" placeholder="Senha" id="ipn_senha"><br><br>
-                <span>Lembrar senha?</span><input type="checkbox" name="" id="lembrar_senha">
-                <span id="esqueceu_senha">Esqueceu sua senha ?</span> <br> <br>
-                <button class="efeito_btn" id="btn_entrar_login" onclick="entrar()">Entrar</button>
-                <button class="efeito_btn" id="btn_criar_login" onclick="criar()">Crie sua conta</button>
-
-            </div>
-        </center>
-
-
-    </div>
-
-
-    <script>
-        // irá pegar o modal pelo id
-        var modal = document.getElementById("myModal");
-
-        // irá pegar o button pelo id e executar a função 
-        var btn = document.getElementById("Login");
-
-        // pegando o span para fechar o modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // assim que clicar, irá abrir o modal
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-
-        // quando clicar no (x), irá fechar o modal pelo span
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        // quando clicar em qualquer lugar da tela irá fecghar o modal
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
         }
     </script>
